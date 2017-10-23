@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: white;
+}
+
+#wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 0;
+  background-color: white;
+}
+
+.highlight {
+  transform:rotate(-15deg);
+  height: 50rem;
+}
+
+.backshadow {
+  height: 43rem;
+  width: 70rem;
+  background-color: #f1a4b5;
+  margin: 5rem auto;
+  box-shadow: 0 25px 40px -20px #000;
+  text-align: center;
+  padding-top: 27px;
+  color: #ffffff;
+  font-size: 2em;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: box-shadow .4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.insideright {
+  background-color: #33343c;
+  height: 43rem;
+  width: 46rem;
+  align-self: flex-end;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #41424A;
+  padding: 99px auto;
+}
+
+.insideleft {
+  margin-left: -5rem;
+}
+
+.promo h2 {
+  font-size: 4em;
+  line-height: 1.1em;
+  color: transparent;
+  background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: 0;
+}
+
+.lead {
+  font-size: 0.7em;
+  margin-top: -4.2em;
+  color: #6d6d71;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 0em;
+  text-shadow: 0 0 2px #ffffff, 0 0 10px #3f4047, 0 0 20px #3f4047, 0 0 30px #3f4047, 0 0 40px #3f4047, 0 0 50px #3f4047;
+  color: white;
+}
+
+.high {
+  color: #a7a7ad;
+  margin-top: -2em;
+}
+
+.low {
+  font-size: 0.5em;
+  color: #6d6d71;
+  align-self: flex-end;
+}
+
+.mid {
+  font-size: 0.6em;
+  margin-top: -1em;
+  width: 26em;
+}
+
+.buttonContainer button {
+  width: 46rem;
+  height: 5rem;
+  background-color: #4f5056;
+  border: none;
+  -webkit-box-shadow: -2px 18px 40px -9px rgba(0,0,0,0.48);
+-moz-box-shadow: -2px 18px 40px -9px rgba(0,0,0,0.48);
+box-shadow: -2px 18px 40px -9px rgba(0,0,0,0.48);
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #ee5c87;
+}
