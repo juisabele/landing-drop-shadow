@@ -6,16 +6,22 @@ body {
   min-height: 100%;
   margin: 0;
   font-family: 'Roboto';
-  background-color: white;
+  background-image: url('../img/iphonebg.png');
+  background-repeat: no-repeat;
+  background-position: -5% 20%;
+  background-attachment: fixed;
+  background-size: 40%;
+  background-color: #3f4047;
 }
 
 #wrapper {
-  height: 100%;
-  width: 100%;
-  background-color: white;
-  position: relative;
+  height: 100vh;
+  width: 100vw;
   z-index: 0;
-  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
 }
 
 .highlight {
@@ -26,15 +32,13 @@ body {
 .backshadow {
   height: 43rem;
   width: 70rem;
-  background-color: #f1a4b5;
-  margin: 5rem auto;
+  background-color: #FFDDA1;
   box-shadow: 0 25px 40px -20px #000;
   text-align: center;
   padding-top: 27px;
   color: #ffffff;
   font-size: 2em;
   box-sizing: border-box;
-  cursor: pointer;
   transition: box-shadow .4s;
   display: flex;
   justify-content: space-between;
@@ -51,7 +55,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: #41424A;
+  color: #52535A;
   padding: 99px auto;
 }
 
@@ -63,7 +67,7 @@ body {
   font-size: 4em;
   line-height: 1.1em;
   color: transparent;
-  background: linear-gradient(90deg, #ee5c87, #f1a4b5, #d587b3);
+  background: linear-gradient(90deg, #F8C537, #EDB230, #FFD151);
   -webkit-background-clip: text;
   background-clip: text;
   margin-top: 0;
@@ -90,13 +94,20 @@ h3 {
 .low {
   font-size: 0.5em;
   color: #6d6d71;
-  align-self: flex-end;
 }
 
 .mid {
   font-size: 0.6em;
   margin-top: -1em;
   width: 26em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100vw;
+  color: #a7a7ad;
 }
 
 .buttonContainer button {
@@ -109,5 +120,116 @@ h3 {
 box-shadow: -2px 18px 40px -9px rgba(0,0,0,0.48);
   font-size: 1em;
   text-transform: uppercase;
-  color: #ee5c87;
+  color: #F8C537;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color:inherit;
+  cursor: pointer;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: 'Roboto';
+    background-image: url('../img/iphonebg.png');
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-attachment: fixed;
+    background-size: 200%;
+    background-color: #3f4047;
+  }
+
+  #wrapper {
+    height: auto;
+    width: 100vw;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .backshadow {
+    height: auto;
+    width: 9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+
+  .insideright {
+    height: 19em;
+    width: 100%;
+    padding: 0 auto;
+    justify-content: flex-start;
+    align-self: center;
+  }
+
+  .highlight {
+    transform:rotate(0deg);
+    height: 35rem;
+    margin-left: -25px;
+  }
+
+  .insideleft {
+    margin-left: 0;
+    margin-top: -4em;
+    width: 100%;
+  }
+
+  .promo h2 {
+    font-size: 2em;
+    line-height: 1.1em;
+    margin-top: 0;
+  }
+
+  .lead {
+    font-size: 0.7em;
+    margin-top: -2.2em;
+    color: #6d6d71;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-top: 0em;
+    text-shadow: 0 0 2px #ffffff, 0 0 10px #3f4047, 0 0 20px #3f4047, 0 0 30px #3f4047, 0 0 40px #3f4047, 0 0 50px #3f4047;
+    color: white;
+  }
+
+  .high {
+    color: #a7a7ad;
+    margin-top: -1em;
+    font-size: 0.6em;
+  }
+
+  .low {
+    font-size: 0.5em;
+    color: #6d6d71;
+  }
+
+  .buttonContainer button {
+    width: 19em;
+    font-size: 0.5em;
+  }
+
+  .mid {
+    width: 15em;
+  }
+
+  .footer {
+    text-align: center;
+  }
 }
